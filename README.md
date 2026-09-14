@@ -3,12 +3,14 @@ Repository containing R files processing and visualisation for "Predictive early
 
 All processing and analysis performed in R version 4.4.1
 
-Metabolomic analysis:
-Random Forest imputation, log transformation, missingness, RUV-III batch correction is performed in 01_preprocess_impute
+Metabolomic analysis
+01_preprocess_impute.R: data preparation, missingness filtering, log transformation, random forest imputation and RUV-III batch correction.
+02_group_comparisons_visualisations.R: metabolome-wide group comparisons, single-sample metabolite set enrichment analysis and associated visualisations.
+03_wgcna_network.R: construction of weighted metabolite correlation networks.
+04_wgcna_associations_visualisations.R: analysis and visualisation of metabolite-module associations.
+05_prepare_survival_data.R: preparation of clinical outcomes and metabolomic data for survival analyses.
+06_survival_models_visualisations.R: survival modelling, prediction analyses and associated visualisations.
 
-Metabolome-wide group comparisons and single sample metabolite set enrichment analysis are performed in 02_group_comparisons_visualisations, and weighted correlation network analysis in 03_wgcna_network and 04_wgcna_associations_visualisations.
-
-Survival analysis is in 05_prepare_survival_data and 06_survival_models_visualisations.
-
-Lipidomic analysis:
-Random Forest imputation, log transformation, missingness is set out in 07_prepare_lipidomics_data, with group comparisons for lipid species, lipid classes, and lipid compositions for all patients and in presymptomatic mutation carriers in 08_lipidomics_analyses_visualisations
+Lipidomic analysis
+07_prepare_lipidomics_data.R: data preparation, missingness filtering, log transformation and random forest imputation.
+08_lipidomics_analyses_visualisations.R: comparisons of lipid species, lipid-class principal components and lipid compositions between all patients and controls, and between presymptomatic mutation carriers and non-carriers.
