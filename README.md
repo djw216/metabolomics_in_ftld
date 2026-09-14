@@ -1,4 +1,4 @@
-# metabolomics_in_ftld
+# Metabolomics and Lipidomics in FTLD
 Repository containing R files processing and visualisation for "Predictive early and late metabolomic changes in frontotemporal lobar degeneration syndromes"
 
 All processing and analysis performed in R version 4.4.1
